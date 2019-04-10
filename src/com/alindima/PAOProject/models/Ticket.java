@@ -5,10 +5,14 @@ import com.alindima.PAOProject.models.events.Event;
 public class Ticket {
     private Event event;
     private Client client;
+    private Integer id;
+
+    private static Integer nrTickets = 0;
 
     public Ticket(Event event, Client client) {
         this.event = event;
         this.client = client;
+        this.id = ++nrTickets;
     }
 
     public Event getEvent() {
@@ -25,5 +29,9 @@ public class Ticket {
 
     public void setClient(Client client) {
         this.client = client;
+    }
+
+    public Integer getId() {
+        return id;
     }
 }

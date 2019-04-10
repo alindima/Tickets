@@ -1,8 +1,12 @@
 package com.alindima.PAOProject.services;
 
 import com.alindima.PAOProject.models.Client;
+import com.alindima.PAOProject.models.Location;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class ClientService {
     private ArrayList<Client> clients = new ArrayList<>();
@@ -38,5 +42,28 @@ public class ClientService {
         }
 
         return null;
+    }
+
+    public List<Client> getAllClients() {
+        return clients;
+    }
+
+    public List<Client> getClientsByCity(String city) {
+        List<Client> auxList = new ArrayList<>();
+
+        for (Client c : clients) {
+            if (c.getCity().equals(city)) {
+                auxList.add(c);
+            }
+        }
+
+        return auxList;
+    }
+
+    public List<Client> getSortedClientsByName() {
+        ArrayList<Client> clients = (ArrayList<Client>) this.clients.clone();
+        Collections.sort(clients);
+
+        return clients;
     }
 }

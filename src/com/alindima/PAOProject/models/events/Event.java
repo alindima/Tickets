@@ -3,11 +3,14 @@ package com.alindima.PAOProject.models.events;
 import com.alindima.PAOProject.models.Location;
 
 import java.time.LocalDateTime;
+import java.util.Comparator;
 
 public abstract class Event {
     protected Location location;
 
     protected String name;
+
+    protected String description = "";
 
     protected LocalDateTime dateTime;
 
@@ -39,5 +42,13 @@ public abstract class Event {
 
     public void setDateTime(LocalDateTime dateTime) {
         this.dateTime = dateTime;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
