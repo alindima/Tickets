@@ -25,9 +25,9 @@ public class LocationService {
     }
 
     public Location getLocation(String venueName) {
-        for (int i = 0; i < locations.size(); i++) {
-            if (locations.get(i).getVenue() == venueName) {
-                return locations.get(i);
+        for (Location l : locations) {
+            if (l.getVenue().equals(venueName)) {
+                return l;
             }
         }
 

@@ -21,9 +21,9 @@ public class ClientService {
     }
 
     public Client getClient(Integer id) {
-        for (int i = 0; i < clients.size(); i++) {
-            if (clients.get(i).getId() == id) {
-                return clients.get(i);
+        for (Client c : clients) {
+            if (c.getId().equals(id)) {
+                return c;
             }
         }
 
@@ -31,9 +31,9 @@ public class ClientService {
     }
 
     public Client getClient(String name) {
-        for (int i = 0; i < clients.size(); i++) {
-            if (clients.get(i).getName() == name) {
-                return clients.get(i);
+        for (Client c : clients) {
+            if (c.getName().equals(name)) {
+                return c;
             }
         }
 

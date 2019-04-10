@@ -21,9 +21,9 @@ public class EventService {
     }
 
     public Event getEvent(String name) {
-        for (int i = 0; i < events.size(); i++) {
-            if (events.get(i).getName() == name) {
-                return events.get(i);
+        for (Event e : events) {
+            if (e.getName().equals(name)) {
+                return e;
             }
         }
 
