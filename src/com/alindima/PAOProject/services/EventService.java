@@ -1,8 +1,9 @@
 package com.alindima.PAOProject.services;
 
 import com.alindima.PAOProject.models.Location;
-import com.alindima.PAOProject.models.events.Event;
+import com.alindima.PAOProject.models.events.*;
 import com.alindima.PAOProject.comparators.EventNameComparator;
+import com.alindima.PAOProject.comparators.EventDateComparator;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -55,7 +56,7 @@ public class EventService {
         List<Event> auxList = new ArrayList<>();
 
         for (Event e : events) {
-            if(e.getDateTime().toLocalDate().equals(date)){
+            if (e.getDateTime().toLocalDate().equals(date)) {
                 auxList.add(e);
             }
         }
@@ -65,9 +66,65 @@ public class EventService {
 
     public List<Event> getSortedEventsByName() {
         ArrayList<Event> events = (ArrayList<Event>) this.events.clone();
-        Collections.sort(events, new EventNameComparator());
+        events.sort(new EventNameComparator());
 
         return events;
+    }
+
+    public List<Event> getSortedEventsByDate() {
+        ArrayList<Event> events = (ArrayList<Event>) this.events.clone();
+        events.sort(new EventDateComparator());
+
+        return events;
+    }
+
+    public List<ConcertEvent> getConcertEvents() {
+        ArrayList<ConcertEvent> auxList = new ArrayList<>();
+
+        for(Event event : events){
+            if (event instanceof ConcertEvent) {
+                auxList.add((ConcertEvent) event);
+            }
+        }
+
+        return auxList;
+    }
+
+    public List<FestivalEvent> getFestivalEvents() {
+        ArrayList<FestivalEvent> auxList = new ArrayList<>();
+
+        for(Event event : events){
+            if (event instanceof FestivalEvent) {
+                auxList.add((FestivalEvent) event);
+            }
+        }
+
+        return auxList;
+    }
+
+    public List<OperaEvent> getOperaEvents() {
+        ArrayList<OperaEvent> auxList = new ArrayList<>();
+
+        for(Event event : events){
+            if (event instanceof OperaEvent) {
+                auxList.add((OperaEvent) event);
+            }
+        }
+
+        return auxList;
+    }
+
+
+    public List<TheaterEvent> getTheaterEvents() {
+        ArrayList<TheaterEvent> auxList = new ArrayList<>();
+
+        for(Event event : events){
+            if (event instanceof TheaterEvent) {
+                auxList.add((TheaterEvent) event);
+            }
+        }
+
+        return auxList;
     }
 
 }

@@ -27,7 +27,7 @@ public class Main {
         EventService eventService = EventService.getInstance();
         eventService.addEvent(event);
 
-        Event e2 = new ConcertEvent(location, "AAA", LocalDateTime.now());
+        Event e2 = new ConcertEvent(location, "AAA", LocalDateTime.now(), "Rock");
         eventService.addEvent(e2);
 
         for (Event e : eventService.getAllEvents()) {
@@ -68,7 +68,7 @@ public class Main {
             System.out.print(c.getName() + " ");
         }
 
-        System.out.println("");
+        System.out.println();
 
         //emite bilet
         Ticket ticket = new Ticket(event, client);

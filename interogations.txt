@@ -1,13 +1,11 @@
 //get all events with given location
 //get all clients with given city
 //get all events on certain date
-sort events by date
+//sort events by date
 //sort clients by name
 //sort events by name
-show all concerts/theaterevents/festivals/operaevents
-show all tickets for a client
-show all events at a venue
-show all past tickets for a client
-delete a client
-
-//make abstract methods in events and specialized methods
+//get client by id
+//get client by name
+//get event by name
+//show all tickets for a client
+//show all concerts/theaterevents/festivals/operaevents

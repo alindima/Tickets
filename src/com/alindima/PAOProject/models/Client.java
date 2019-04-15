@@ -33,7 +33,12 @@ public class Client implements Comparable<Client> {
         this.city = city;
     }
 
+    @Override
     public int compareTo(Client c) {
         return name.compareTo(c.name);
+    }
+
+    public boolean equals(Client client) {
+        return id == client.id;
     }
 }

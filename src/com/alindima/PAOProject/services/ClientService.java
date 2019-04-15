@@ -1,9 +1,7 @@
 package com.alindima.PAOProject.services;
 
 import com.alindima.PAOProject.models.Client;
-import com.alindima.PAOProject.models.Location;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

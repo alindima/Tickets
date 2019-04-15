@@ -4,9 +4,9 @@ import com.alindima.PAOProject.models.events.Event;
 
 import java.util.Comparator;
 
-public class EventNameComparator implements Comparator<Event> {
+public class EventDateComparator implements Comparator<Event> {
     @Override
     public int compare(Event e1, Event e2) {
-        return e1.getName().compareTo(e2.getName());
+        return e1.getDateTime().compareTo(e2.getDateTime());
     }
 }
