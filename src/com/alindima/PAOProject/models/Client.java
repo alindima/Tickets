@@ -1,6 +1,8 @@
 package com.alindima.PAOProject.models;
 
-public class Client implements Comparable<Client> {
+import java.io.Serializable;
+
+public class Client implements Comparable<Client>, Serializable {
     private Integer id;
     private String name;
     private String city;

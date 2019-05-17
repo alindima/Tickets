@@ -4,12 +4,16 @@ import com.alindima.PAOProject.models.Client;
 import com.alindima.PAOProject.models.Ticket;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class TicketService {
+
+    private LogService logService = LogService.getInstance();
+
     private ArrayList<Ticket> tickets = new ArrayList<>();
 
     private static TicketService instance = new TicketService();
+
+    private static FileSerializableService fileSerializableService = FileSerializableService.getInstance();
 
     public static TicketService getInstance() {
         return instance;
@@ -19,10 +23,14 @@ public class TicketService {
     }
 
     public void addTicket(Ticket ticket) {
+        logService.writeLine("Add ticket");
+
         tickets.add(ticket);
     }
 
-    public List<Ticket> getTicketsByClient(Client client) {
+    public ArrayList<Ticket> getTicketsByClient(Client client) {
+        logService.writeLine("Get tickets by client");
+
         ArrayList<Ticket> auxList = new ArrayList<>();
 
         for (Ticket t : tickets) {
@@ -32,5 +40,19 @@ public class TicketService {
         }
 
         return auxList;
+    }
+
+    public ArrayList<Ticket> getAllTickets() {
+        logService.writeLine("Get all tickets");
+
+        return tickets;
+    }
+
+    public void readDataFromFile(){
+        tickets = (ArrayList<Ticket>) fileSerializableService.readObjectFromFile(fileSerializableService.getTicketSerializablePath());
+    }
+
+    public void writeDataToFile(){
+        fileSerializableService.writeObjectToFile(tickets, fileSerializableService.getTicketSerializablePath());
     }
 }

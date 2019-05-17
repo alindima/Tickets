@@ -4,12 +4,16 @@ import com.alindima.PAOProject.models.Client;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 public class ClientService {
+
+    private LogService logService = LogService.getInstance();
+
     private ArrayList<Client> clients = new ArrayList<>();
 
     private static ClientService instance = new ClientService();
+
+    private static FileSerializableService fileSerializableService = FileSerializableService.getInstance();
 
     public static ClientService getInstance() {
         return instance;
@@ -19,10 +23,14 @@ public class ClientService {
     }
 
     public void addClient(Client client) {
+        logService.writeLine("Add client");
+
         clients.add(client);
     }
 
     public Client getClient(Integer id) {
+        logService.writeLine("Get client by id");
+
         for (Client c : clients) {
             if (c.getId().equals(id)) {
                 return c;
@@ -33,6 +41,8 @@ public class ClientService {
     }
 
     public Client getClient(String name) {
+        logService.writeLine("Get client by name");
+
         for (Client c : clients) {
             if (c.getName().equals(name)) {
                 return c;
@@ -42,12 +52,16 @@ public class ClientService {
         return null;
     }
 
-    public List<Client> getAllClients() {
+    public ArrayList<Client> getAllClients() {
+        logService.writeLine("Get all clients");
+
         return clients;
     }
 
-    public List<Client> getClientsByCity(String city) {
-        List<Client> auxList = new ArrayList<>();
+    public ArrayList<Client> getClientsByCity(String city) {
+        logService.writeLine("Get clients by city");
+
+        ArrayList<Client> auxList = new ArrayList<>();
 
         for (Client c : clients) {
             if (c.getCity().equals(city)) {
@@ -58,10 +72,20 @@ public class ClientService {
         return auxList;
     }
 
-    public List<Client> getSortedClientsByName() {
+    public ArrayList<Client> getSortedClientsByName() {
+        logService.writeLine("Get sorted clients by name");
+
         ArrayList<Client> clients = (ArrayList<Client>) this.clients.clone();
         Collections.sort(clients);
 
         return clients;
+    }
+
+    public void readDataFromFile(){
+        clients = (ArrayList<Client>) fileSerializableService.readObjectFromFile(fileSerializableService.getClientSerializablePath());
+    }
+
+    public void writeDataToFile(){
+        fileSerializableService.writeObjectToFile(clients, fileSerializableService.getClientSerializablePath());
     }
 }

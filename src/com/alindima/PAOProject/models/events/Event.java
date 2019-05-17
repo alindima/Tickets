@@ -2,10 +2,11 @@ package com.alindima.PAOProject.models.events;
 
 import com.alindima.PAOProject.models.Location;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Comparator;
 
-public abstract class Event {
+public abstract class Event implements Serializable {
     protected Location location;
 
     protected String name;

@@ -1,0 +1,4 @@
+Get all clients,2019-05-17
+Get all locations,2019-05-17
+Get all events,2019-05-17
+Get all tickets,2019-05-17

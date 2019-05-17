@@ -7,10 +7,11 @@ import com.alindima.PAOProject.comparators.EventDateComparator;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class EventService {
+
+    private LogService logService = LogService.getInstance();
+
     private ArrayList<Event> events = new ArrayList<>();
 
     private static EventService instance = new EventService();
@@ -19,14 +20,20 @@ public class EventService {
         return instance;
     }
 
+    private static FileSerializableService fileSerializableService = FileSerializableService.getInstance();
+
     private EventService() {
     }
 
     public void addEvent(Event event) {
+        logService.writeLine("Add event");
+
         events.add(event);
     }
 
     public Event getEvent(String name) {
+        logService.writeLine("Get event by name");
+
         for (Event e : events) {
             if (e.getName().equals(name)) {
                 return e;
@@ -36,12 +43,16 @@ public class EventService {
         return null;
     }
 
-    public List<Event> getAllEvents() {
+    public ArrayList<Event> getAllEvents() {
+        logService.writeLine("Get all events");
+
         return events;
     }
 
-    public List<Event> getEventsByLocation(Location l) {
-        List<Event> auxList = new ArrayList<>();
+    public ArrayList<Event> getEventsByLocation(Location l) {
+        logService.writeLine("Get events by location");
+
+        ArrayList<Event> auxList = new ArrayList<>();
 
         for (Event e : events) {
             if(e.getLocation().equals(l)){
@@ -52,8 +63,10 @@ public class EventService {
         return auxList;
     }
 
-    public List<Event> getEventsByDate(LocalDate date) {
-        List<Event> auxList = new ArrayList<>();
+    public ArrayList<Event> getEventsByDate(LocalDate date) {
+        logService.writeLine("get events by date");
+
+        ArrayList<Event> auxList = new ArrayList<>();
 
         for (Event e : events) {
             if (e.getDateTime().toLocalDate().equals(date)) {
@@ -64,21 +77,27 @@ public class EventService {
         return auxList;
     }
 
-    public List<Event> getSortedEventsByName() {
+    public ArrayList<Event> getSortedEventsByName() {
+        logService.writeLine("Get sorted events by name");
+
         ArrayList<Event> events = (ArrayList<Event>) this.events.clone();
         events.sort(new EventNameComparator());
 
         return events;
     }
 
-    public List<Event> getSortedEventsByDate() {
+    public ArrayList<Event> getSortedEventsByDate() {
+        logService.writeLine("Get sorted events by date");
+
         ArrayList<Event> events = (ArrayList<Event>) this.events.clone();
         events.sort(new EventDateComparator());
 
         return events;
     }
 
-    public List<ConcertEvent> getConcertEvents() {
+    public ArrayList<ConcertEvent> getConcertEvents() {
+        logService.writeLine("Get concert events");
+
         ArrayList<ConcertEvent> auxList = new ArrayList<>();
 
         for(Event event : events){
@@ -90,7 +109,9 @@ public class EventService {
         return auxList;
     }
 
-    public List<FestivalEvent> getFestivalEvents() {
+    public ArrayList<FestivalEvent> getFestivalEvents() {
+        logService.writeLine("Get festival events");
+
         ArrayList<FestivalEvent> auxList = new ArrayList<>();
 
         for(Event event : events){
@@ -102,7 +123,9 @@ public class EventService {
         return auxList;
     }
 
-    public List<OperaEvent> getOperaEvents() {
+    public ArrayList<OperaEvent> getOperaEvents() {
+        logService.writeLine("Get opera events");
+
         ArrayList<OperaEvent> auxList = new ArrayList<>();
 
         for(Event event : events){
@@ -115,7 +138,9 @@ public class EventService {
     }
 
 
-    public List<TheaterEvent> getTheaterEvents() {
+    public ArrayList<TheaterEvent> getTheaterEvents() {
+        logService.writeLine("Get theater events");
+
         ArrayList<TheaterEvent> auxList = new ArrayList<>();
 
         for(Event event : events){
@@ -125,6 +150,14 @@ public class EventService {
         }
 
         return auxList;
+    }
+
+    public void readDataFromFile(){
+        events = (ArrayList<Event>) fileSerializableService.readObjectFromFile(fileSerializableService.getEventSerializablePath());
+    }
+
+    public void writeDataToFile(){
+        fileSerializableService.writeObjectToFile(events, fileSerializableService.getEventSerializablePath());
     }
 
 }

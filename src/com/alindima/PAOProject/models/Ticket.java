@@ -2,7 +2,9 @@ package com.alindima.PAOProject.models;
 
 import com.alindima.PAOProject.models.events.Event;
 
-public class Ticket {
+import java.io.Serializable;
+
+public class Ticket implements Serializable {
     private Event event;
     private Client client;
     private Integer id;
