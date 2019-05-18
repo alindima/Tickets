@@ -81,6 +81,17 @@ public class ClientService {
         return clients;
     }
 
+    public String format(ArrayList<Client> clients) {
+        StringBuilder text = new StringBuilder();
+
+        for (Client c : clients) {
+            text.append(c.getId()).append(". ").append(c.getName()).append(", ").append("City: ").append(c.getCity())
+                    .append("\n");
+        }
+
+        return text.toString();
+    }
+
     public void readDataFromFile(){
         clients = (ArrayList<Client>) fileSerializableService.readObjectFromFile(fileSerializableService.getClientSerializablePath());
     }

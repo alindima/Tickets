@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4dcd031-e77c-467b-8a3d-9b8a6e123948" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/alindima/PAOProject/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alindima/PAOProject/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/alindima/PAOProject/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alindima/PAOProject/models/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/alindima/PAOProject/models/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alindima/PAOProject/models/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/alindima/PAOProject/models/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alindima/PAOProject/models/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/alindima/PAOProject/models/events/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alindima/PAOProject/models/events/Event.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/alindima/PAOProject/services/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alindima/PAOProject/services/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/alindima/PAOProject/services/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alindima/PAOProject/services/EventService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/alindima/PAOProject/services/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alindima/PAOProject/services/LocationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/alindima/PAOProject/services/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alindima/PAOProject/services/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alindima/PAOProject/services/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alindima/PAOProject/services/LogService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,78 +20,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/log.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/services/LogService.java">
+        <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/models/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="221">
+              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
-                <element signature="e#446#569#0" expanded="true" />
-                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#844#845#0" expanded="true" />
+                <element signature="e#887#888#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/services/FileSerializableService.java">
+        <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/ManageLocationsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-629">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="260">
+              <caret line="50" column="74" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1676#1677#0" expanded="true" />
-                <element signature="e#1721#1722#0" expanded="true" />
-                <element signature="e#1776#1777#0" expanded="true" />
-                <element signature="e#1820#1821#0" expanded="true" />
-                <element signature="e#1878#1879#0" expanded="true" />
-                <element signature="e#1925#1926#0" expanded="true" />
-                <element signature="e#1981#1982#0" expanded="true" />
-                <element signature="e#2026#2027#0" expanded="true" />
+                <element signature="e#930#931#0" expanded="true" />
+                <element signature="e#971#972#0" expanded="true" />
+                <element signature="e#1135#1136#0" expanded="true" />
+                <element signature="e#1179#1180#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/services/ClientService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1462">
-              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#404#405#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/ManageLocationsPage.form">
+          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/services/TicketService.java">
+        <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/ManageClientsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+            <state relative-caret-position="247">
+              <caret line="72" column="57" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="72" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,25 +67,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/services/EventService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="141" column="49" selection-start-line="141" selection-start-column="49" selection-end-line="141" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/ManageClientsPage.form">
+          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/services/LocationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="362">
+              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/models/Location.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -152,18 +119,25 @@
         <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/models/events/FestivalEvent.java" />
         <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/models/events/TheaterEvent.java" />
         <option value="$PROJECT_DIR$/interogations.txt" />
-        <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/models/Client.java" />
         <option value="$PROJECT_DIR$/resources/clients.txt" />
         <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/models/events/Event.java" />
         <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/models/Location.java" />
         <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/models/Ticket.java" />
         <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/services/FileSerializableService.java" />
-        <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/services/ClientService.java" />
         <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/services/TicketService.java" />
         <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/services/EventService.java" />
-        <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/services/LocationService.java" />
-        <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/services/LogService.java" />
         <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/LandingPage.form" />
+        <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/services/ClientService.java" />
+        <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/LandingPage.java" />
+        <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/ManageClientsPage.form" />
+        <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/ManageClientsPage.java" />
+        <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/services/LogService.java" />
+        <option value="$PROJECT_DIR$/logs/log.txt" />
+        <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/models/Client.java" />
+        <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/ManageLocationsPage.form" />
+        <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/ManageLocationsPage.java" />
+        <option value="$PROJECT_DIR$/src/com/alindima/PAOProject/services/LocationService.java" />
       </list>
     </option>
   </component>
@@ -227,6 +201,27 @@
               <item name="PAOProject" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tickets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tickets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PAOProject" type="462c0819:PsiDirectoryNode" />
+              <item name="LandingPage" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="tickets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tickets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PAOProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ManageClientsPage" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="tickets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tickets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PAOProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ManageLocationsPage" type="e9f4de52:FormNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -235,7 +230,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558093695058" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="164" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="471" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558179799920" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -249,7 +248,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="LandingPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.alindima.PAOProject.LandingPage" />
+      <module name="tickets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.alindima.PAOProject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.alindima.PAOProject.Main" />
       <module name="tickets" />
@@ -263,6 +275,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.LandingPage" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +296,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -292,7 +305,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.19546743" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.27053824" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -447,40 +460,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/models/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/clients.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/models/Location.java">
+    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/services/FileSerializableService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-235">
-          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        <state relative-caret-position="187">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/services/TicketService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
+        <state relative-caret-position="680">
           <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -490,7 +485,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/services/EventService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
+        <state relative-caret-position="2261">
           <caret line="141" column="49" selection-start-line="141" selection-start-column="49" selection-end-line="141" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -498,10 +493,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/services/LocationService.java">
+    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/LandingPage.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/LandingPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -515,52 +520,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/services/LogService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/ManageLocationsPage.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/models/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/ManageClientsPage.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/services/ClientService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="368">
+          <caret line="71" column="23" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="71" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/services/FileSerializableService.java">
+    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/ManageClientsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-629">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="247">
+          <caret line="72" column="57" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="72" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-            <element signature="e#1721#1722#0" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-            <element signature="e#1820#1821#0" expanded="true" />
-            <element signature="e#1878#1879#0" expanded="true" />
-            <element signature="e#1925#1926#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
-            <element signature="e#2026#2027#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/services/LogService.java">
+    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/ManageLocationsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="260">
+          <caret line="50" column="74" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#446#569#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="e#1179#1180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/services/LocationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alindima/PAOProject/models/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -14,21 +14,20 @@ public class Main {
     public static void main(String[] args) {
 //        fileSerializableService.populateDummyData();
 
+        loadDataFromFile();
+
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                LandingPage landingPage = LandingPage.getLandingPage();
+                landingPage.run();
+            }
+        });
+    }
+
+    private static void loadDataFromFile() {
         clientService.readDataFromFile();
         locationService.readDataFromFile();
         eventService.readDataFromFile();
         ticketService.readDataFromFile();
-
-        System.out.println(clientService.getAllClients().size());
-        System.out.println(locationService.getAllLocations().size());
-        System.out.println(eventService.getAllEvents().size());
-        System.out.println(ticketService.getAllTickets().size());
-
-        clientService.writeDataToFile();
-        locationService.writeDataToFile();
-        eventService.writeDataToFile();
-        ticketService.writeDataToFile();
-
-
     }
 }

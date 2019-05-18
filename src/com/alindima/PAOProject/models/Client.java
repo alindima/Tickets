@@ -41,6 +41,6 @@ public class Client implements Comparable<Client>, Serializable {
     }
 
     public boolean equals(Client client) {
-        return id == client.id;
+        return id.equals(client.id);
     }
 }

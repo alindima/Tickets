@@ -4,8 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
-import java.time.LocalDate;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class LogService {
     private static LogService instance = new LogService();
@@ -34,7 +33,7 @@ public class LogService {
     }
 
     public void writeLine(String message) {
-        LocalDate d = LocalDate.now();
+        LocalDateTime d = LocalDateTime.now();
         printWriter.println(message + "," + d);
 
     }

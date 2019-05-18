@@ -1,5 +1,6 @@
 package com.alindima.PAOProject.services;
 
+import com.alindima.PAOProject.models.Client;
 import com.alindima.PAOProject.models.Location;
 
 import java.util.ArrayList;
@@ -33,22 +34,35 @@ public class LocationService {
         return locations.get(index);
     }
 
-    public Location getLocation(String venueName) {
-        logService.writeLine("Get location by venue name");
+    public ArrayList<Location> getLocationsByCity(String city) {
+        logService.writeLine("Get locations by city");
+
+        ArrayList<Location> auxList = new ArrayList<>();
 
         for (Location l : locations) {
-            if (l.getVenue().equals(venueName)) {
-                return l;
+            if (l.getCity().equals(city)) {
+                auxList.add(l);
             }
         }
 
-        return null;
+        return auxList;
     }
 
     public ArrayList<Location> getAllLocations() {
         logService.writeLine("Get all locations");
 
         return locations;
+    }
+
+    public String format(ArrayList<Location> locations) {
+        StringBuilder text = new StringBuilder();
+
+        for (Location c : locations) {
+            text.append("Venue: ").append(c.getVenue()).append(", City: ").append(c.getCity()).append(", ")
+                    .append("Country: ").append(c.getCountry()).append("\n");
+        }
+
+        return text.toString();
     }
 
     public void readDataFromFile(){
