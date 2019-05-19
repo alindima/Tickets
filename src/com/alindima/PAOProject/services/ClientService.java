@@ -92,6 +92,11 @@ public class ClientService {
         return text.toString();
     }
 
+    public void readDataFromDB() {
+        DBService dbService = DBService.getInstance();
+        clients = dbService.getAllClients();
+    }
+
     public void readDataFromFile(){
         clients = (ArrayList<Client>) fileSerializableService.readObjectFromFile(fileSerializableService.getClientSerializablePath());
     }

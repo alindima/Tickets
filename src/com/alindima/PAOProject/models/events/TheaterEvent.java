@@ -3,17 +3,17 @@ package com.alindima.PAOProject.models.events;
 import com.alindima.PAOProject.models.Location;
 
 import java.time.LocalDateTime;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class TheaterEvent extends Event {
-    private List<String> distribution = new LinkedList<>();
+    private Set<String> distribution = new TreeSet<>();
 
-    public TheaterEvent(Location location, String name, LocalDateTime dateTime) {
-        super(location, name, dateTime);
+    public TheaterEvent(Integer id, Location location, String name, LocalDateTime dateTime) {
+        super(id, location, name, dateTime);
     }
 
-    public List<String> getDistribution() {
+    public Set<String> getDistribution() {
         return distribution;
     }
 

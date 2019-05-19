@@ -15,7 +15,10 @@ public abstract class Event implements Serializable {
 
     protected LocalDateTime dateTime;
 
-    public Event(Location location, String name, LocalDateTime dateTime) {
+    protected Integer id;
+
+    public Event(Integer id, Location location, String name, LocalDateTime dateTime) {
+        this.id = id;
         this.location = location;
         this.name = name;
         this.dateTime = dateTime;
@@ -51,5 +54,13 @@ public abstract class Event implements Serializable {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

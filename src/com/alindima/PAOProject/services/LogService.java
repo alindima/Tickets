@@ -34,7 +34,7 @@ public class LogService {
 
     public void writeLine(String message) {
         LocalDateTime d = LocalDateTime.now();
-        printWriter.println(message + "," + d);
+        printWriter.println(message + "," + d + " Thread name: " + Thread.currentThread().getName());
 
     }
 

@@ -6,12 +6,11 @@ import java.time.LocalDateTime;
 
 public class FestivalEvent extends Event {
 
-    private Integer nrOfDays;
+    private Integer nrOfDays = 1;
 
-    public FestivalEvent(Location location, String name, LocalDateTime dateTime, Integer nrOfDays) {
-        super(location, name, dateTime);
+    public FestivalEvent(Integer id, Location location, String name, LocalDateTime dateTime) {
+        super(id, location, name, dateTime);
 
-        this.nrOfDays = nrOfDays;
     }
 
     public Integer getNrOfDays() {

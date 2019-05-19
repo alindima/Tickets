@@ -4,7 +4,7 @@ import com.alindima.PAOProject.models.Location;
 import java.time.LocalDateTime;
 
 public class OperaEvent extends Event {
-    public OperaEvent(Location location, String name, LocalDateTime dateTime) {
-        super(location, name, dateTime);
+    public OperaEvent(Integer id, Location location, String name, LocalDateTime dateTime) {
+        super(id, location, name, dateTime);
     }
 }

@@ -1,12 +1,40 @@
-Get all clients,2019-05-18T14:26:37.996
-Get all clients,2019-05-18T14:26:51.421
-Get sorted clients by name,2019-05-18T14:26:55.623
-Get all clients,2019-05-18T14:27:10.959
-Get all locations,2019-05-18T14:38:05.232
-Get all locations,2019-05-18T14:42:58.467
-Get locations by city,2019-05-18T14:43:02.552
-Get locations by city,2019-05-18T14:43:06.528
-Get all locations,2019-05-18T14:43:08.348
-Get all clients,2019-05-18T14:43:11.415
-Get sorted clients by name,2019-05-18T14:43:12.404
-Get clients by city,2019-05-18T14:43:15.971
+Get location by id,2019-05-19T12:37:02.325 Thread name: main
+Get location by id,2019-05-19T12:37:02.328 Thread name: main
+Get client by id,2019-05-19T12:37:02.330 Thread name: main
+Get event by id,2019-05-19T12:37:02.330 Thread name: main
+Get client by id,2019-05-19T12:37:02.330 Thread name: main
+Get event by id,2019-05-19T12:37:02.330 Thread name: main
+Get client by id,2019-05-19T12:37:02.330 Thread name: main
+Get event by id,2019-05-19T12:37:02.330 Thread name: main
+Get all clients,2019-05-19T12:37:05.422 Thread name: AWT-EventQueue-0
+Get all clients,2019-05-19T12:37:54.368 Thread name: AWT-EventQueue-0
+Get sorted clients by name,2019-05-19T12:37:55.555 Thread name: AWT-EventQueue-0
+Get location by id,2019-05-19T12:54:31.184 Thread name: main
+Get location by id,2019-05-19T12:54:31.200 Thread name: main
+Get client by id,2019-05-19T12:54:31.200 Thread name: main
+Get event by id,2019-05-19T12:54:31.200 Thread name: main
+Get client by id,2019-05-19T12:54:31.200 Thread name: main
+Get event by id,2019-05-19T12:54:31.200 Thread name: main
+Get client by id,2019-05-19T12:54:31.200 Thread name: main
+Get event by id,2019-05-19T12:54:31.200 Thread name: main
+Get all clients,2019-05-19T12:54:34.371 Thread name: AWT-EventQueue-0
+Get sorted clients by name,2019-05-19T12:54:36.080 Thread name: AWT-EventQueue-0
+Get clients by city,2019-05-19T12:54:41.034 Thread name: AWT-EventQueue-0
+Get all locations,2019-05-19T12:54:47.479 Thread name: AWT-EventQueue-0
+Get location by id,2019-05-19T12:56:11.065 Thread name: main
+Get location by id,2019-05-19T12:56:11.080 Thread name: main
+Get client by id,2019-05-19T12:56:11.080 Thread name: main
+Get event by id,2019-05-19T12:56:11.080 Thread name: main
+Get client by id,2019-05-19T12:56:11.080 Thread name: main
+Get event by id,2019-05-19T12:56:11.080 Thread name: main
+Get client by id,2019-05-19T12:56:11.080 Thread name: main
+Get event by id,2019-05-19T12:56:11.080 Thread name: main
+Get all clients,2019-05-19T12:56:13.943 Thread name: AWT-EventQueue-0
+Get location by id,2019-05-19T13:01:01.712 Thread name: main
+Get location by id,2019-05-19T13:01:01.712 Thread name: main
+Get client by id,2019-05-19T13:01:01.712 Thread name: main
+Get event by id,2019-05-19T13:01:01.712 Thread name: main
+Get client by id,2019-05-19T13:01:01.712 Thread name: main
+Get event by id,2019-05-19T13:01:01.712 Thread name: main
+Get client by id,2019-05-19T13:01:01.712 Thread name: main
+Get event by id,2019-05-19T13:01:01.712 Thread name: main

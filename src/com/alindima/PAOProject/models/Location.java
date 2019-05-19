@@ -3,16 +3,27 @@ package com.alindima.PAOProject.models;
 import java.io.Serializable;
 
 public class Location implements Serializable {
+    private Integer id;
+
     private String venue;
 
     private String city;
 
     private String country;
 
-    public Location(String venue, String city, String country) {
+    public Location(Integer id, String venue, String city, String country) {
+        this.id = id;
         this.venue = venue;
         this.city = city;
         this.country = country;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getVenue() {

@@ -1,1 +1,5 @@
 out/
+interogations.txt
+*.iml
+.idea/
+bin/

@@ -60,26 +60,30 @@ public class LandingPage {
     }
 
     private void setManageClientsPage() {
-        frame.setTitle("Manage clients");
+        try {
+            frame.setTitle("Manage clients");
 
-        frame.setContentPane(manageClientsPage.getPanel());
-        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        frame.setUndecorated(true);
+            frame.setContentPane(manageClientsPage.getPanel());
+            frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+            frame.setUndecorated(true);
 
-        frame.pack();
-        frame.setVisible(true);
+            frame.pack();
+            frame.setVisible(true);
+        } catch(Exception e) {}
     }
 
     private void setManageLocationsPage() {
-        frame.setTitle("Manage event locations");
-        frame.setPreferredSize(new Dimension(1500, 1000));
-        frame.setContentPane(manageLocationsPage.getPanel());
+        try {
+            frame.setTitle("Manage event locations");
 
-        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        frame.setUndecorated(true);
+            frame.setContentPane(manageLocationsPage.getPanel());
 
-        frame.pack();
-        frame.setVisible(true);
+            frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+            frame.setUndecorated(true);
+
+            frame.pack();
+            frame.setVisible(true);
+        } catch(Exception e) {}
     }
 
     public static LandingPage getLandingPage() {

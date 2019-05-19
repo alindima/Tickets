@@ -6,12 +6,10 @@ import java.time.LocalDateTime;
 
 public class ConcertEvent extends Event {
 
-    private String genre;
+    private String genre = "";
 
-    public ConcertEvent(Location location, String name, LocalDateTime dateTime, String genre) {
-        super(location, name, dateTime);
-
-        this.genre = genre;
+    public ConcertEvent(Integer id, Location location, String name, LocalDateTime dateTime) {
+        super(id, location, name, dateTime);
     }
 
     public String getGenre() {

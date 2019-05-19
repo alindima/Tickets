@@ -74,8 +74,8 @@ public class FileSerializableService {
     public void populateDummyData() {
         //adauga locatii
         ArrayList<Location> locations = new ArrayList<>();
-        Location location1 = new Location("TNB", "Bucharest", "Romania"),
-                location2 = new Location("Romexpo", "Bucharest", "Romania");
+        Location location1 = new Location(1, "TNB", "Bucharest", "Romania"),
+                location2 = new Location(2,"Romexpo", "Bucharest", "Romania");
 
         locations.add(location1);
         locations.add(location2);
@@ -84,8 +84,8 @@ public class FileSerializableService {
 
         //adauga events
         ArrayList<Event> events = new ArrayList<>();
-        Event e1 = new TheaterEvent(location1, "Dineu Cu Prosti", LocalDateTime.now()),
-                e2 = new ConcertEvent(location2, "AAA", LocalDateTime.now(), "Rock");
+        Event e1 = new TheaterEvent(1, location1, "Dineu Cu Prosti", LocalDateTime.now()),
+                e2 = new ConcertEvent(2, location2, "AAA", LocalDateTime.now());
 
         events.add(e1);
         events.add(e2);
@@ -94,9 +94,9 @@ public class FileSerializableService {
 
         //adauga clienti
         ArrayList<Client> clients = new ArrayList<>();
-        Client client1 = new Client("Alin Dima", "Bucharest");
-        Client client2 = new Client("Staniea Alex", "Bucharest");
-        Client client3 = new Client("Ivascu", "Oltenita");
+        Client client1 = new Client(1,"Alin Dima", "Bucharest");
+        Client client2 = new Client(2,"Staniea Alex", "Bucharest");
+        Client client3 = new Client(3,"Ivascu", "Oltenita");
 
         clients.add(client1);
         clients.add(client2);
@@ -105,8 +105,9 @@ public class FileSerializableService {
         writeObjectToFile(clients, clientSerializablePath);
 
         //emite bilete
+        int i = 0;
         ArrayList<Ticket> tickets = new ArrayList<>();
-        Ticket ticket = new Ticket(e1, client1);
+        Ticket ticket = new Ticket(++i, e1, client1);
         tickets.add(ticket);
 
         writeObjectToFile(tickets, ticketSerializablePath);

@@ -43,6 +43,18 @@ public class EventService {
         return null;
     }
 
+    public Event getEvent(Integer id) {
+        logService.writeLine("Get event by id");
+
+        for (Event e : events) {
+            if (e.getId().equals(id)) {
+                return e;
+            }
+        }
+
+        return null;
+    }
+
     public ArrayList<Event> getAllEvents() {
         logService.writeLine("Get all events");
 
@@ -137,7 +149,6 @@ public class EventService {
         return auxList;
     }
 
-
     public ArrayList<TheaterEvent> getTheaterEvents() {
         logService.writeLine("Get theater events");
 
@@ -150,6 +161,11 @@ public class EventService {
         }
 
         return auxList;
+    }
+
+    public void readDataFromDB() {
+        DBService dbService = DBService.getInstance();
+        events = dbService.getAllEvents();
     }
 
     public void readDataFromFile(){

@@ -48,6 +48,12 @@ public class TicketService {
         return tickets;
     }
 
+    public void readDataFromDB() {
+        DBService dbService = DBService.getInstance();
+
+        tickets = dbService.getAllTickets();
+    }
+
     public void readDataFromFile(){
         tickets = (ArrayList<Ticket>) fileSerializableService.readObjectFromFile(fileSerializableService.getTicketSerializablePath());
     }

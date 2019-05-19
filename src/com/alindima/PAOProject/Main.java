@@ -13,8 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
 //        fileSerializableService.populateDummyData();
-
-        loadDataFromFile();
+        loadDataFromDatabase();
 
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
@@ -22,6 +21,16 @@ public class Main {
                 landingPage.run();
             }
         });
+
+        DBService dbService = DBService.getInstance();
+        dbService.closeConnection();
+    }
+
+    private static void loadDataFromDatabase() {
+        clientService.readDataFromDB();
+        locationService.readDataFromDB();
+        eventService.readDataFromDB();
+        ticketService.readDataFromDB();
     }
 
     private static void loadDataFromFile() {

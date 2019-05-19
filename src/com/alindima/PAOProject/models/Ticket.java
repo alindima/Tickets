@@ -9,12 +9,10 @@ public class Ticket implements Serializable {
     private Client client;
     private Integer id;
 
-    private static Integer nrTickets = 0;
-
-    public Ticket(Event event, Client client) {
+    public Ticket(Integer id, Event event, Client client) {
+        this.id = id;
         this.event = event;
         this.client = client;
-        this.id = ++nrTickets;
     }
 
     public Event getEvent() {

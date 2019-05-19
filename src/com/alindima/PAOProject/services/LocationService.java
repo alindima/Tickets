@@ -28,10 +28,16 @@ public class LocationService {
         locations.add(location);
     }
 
-    public Location getLocation(Integer index) throws IndexOutOfBoundsException {
-        logService.writeLine("Get location by index");
+    public Location getLocation(Integer id) {
+        logService.writeLine("Get location by id");
 
-        return locations.get(index);
+        for (Location l : locations) {
+            if (l.getId().equals(id)) {
+                return l;
+            }
+        }
+
+        return null;
     }
 
     public ArrayList<Location> getLocationsByCity(String city) {
@@ -63,6 +69,11 @@ public class LocationService {
         }
 
         return text.toString();
+    }
+
+    public void readDataFromDB() {
+        DBService dbService = DBService.getInstance();
+        locations = dbService.getAllLocations();
     }
 
     public void readDataFromFile(){

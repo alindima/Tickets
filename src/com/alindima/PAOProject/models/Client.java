@@ -7,12 +7,14 @@ public class Client implements Comparable<Client>, Serializable {
     private String name;
     private String city;
 
-    private static Integer nrClients = 0;
+    private static Integer maxId = 0;
 
-    public Client(String name, String city) {
+    public Client(Integer id, String name, String city) {
+        this.id = id;
         this.name = name;
         this.city = city;
-        this.id = ++nrClients;
+
+        maxId = Integer.max(id, maxId);
     }
 
     public String getName() {
@@ -33,6 +35,10 @@ public class Client implements Comparable<Client>, Serializable {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    public Integer getMaxId() {
+        return maxId;
     }
 
     @Override
