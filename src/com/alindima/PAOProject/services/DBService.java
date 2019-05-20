@@ -48,8 +48,8 @@ public class DBService {
             ResultSet resultSet = statement.executeQuery("select * from clients");
 
             while (resultSet.next()) {
-                Client c = new Client(resultSet.getInt(1), resultSet.getString(2),
-                        resultSet.getString(3));
+                Client c = new Client(resultSet.getInt("id"), resultSet.getString("name"),
+                        resultSet.getString("city"));
 
                 clients.add(c);
             }
@@ -70,8 +70,8 @@ public class DBService {
             ResultSet resultSet = statement.executeQuery("select * from locations");
 
             while (resultSet.next()) {
-                Location l = new Location(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3),
-                        resultSet.getString(4));
+                Location l = new Location(resultSet.getInt("id"), resultSet.getString("venue"),
+                        resultSet.getString("city"), resultSet.getString("country"));
 
                 locations.add(l);
             }
